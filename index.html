@@ -10,8 +10,24 @@
         --near-black: #111111;
         --near-white: #f4f4f4;
         --dark-blue: #00449e;
-        --spacing-none: 0;
         --spacing-extra-small: 0.25rem;
+        background: var(--near-white);
+        color: var(--near-black);
+        font-family: ui-monospace, monospace;
+        font-size: 0.875rem;
+        line-height: 1.2em;
+      }
+      @media screen and (min-width: 20rem) {
+        :root {
+          font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+          line-height: calc(1.2em + 0.6 * ((100vw - 20em) / 60));
+        }
+      }
+      @media screen and (min-width: 80rem) {
+        :root {
+          font-size: 1.375rem;
+          line-height: 1.8em;
+        }
       }
       *,
       *:after,
@@ -31,14 +47,15 @@
         justify-content: center;
         text-align: center;
       }
-      html {
-        background: var(--near-white);
-        color: var(--near-black);
-        font-family: ui-monospace, monospace;
+      h1 {
+        font-size: 2rem;
+      }
+      nav {
+        padding-top: 1rem;
       }
       .feather {
-        width: 1.75rem; /*24px;*/
-        height: 1.75rem; /*24px;*/
+        width: 1.8rem;
+        height: 1.8rem;
         stroke: currentColor;
         stroke-width: 2;
         stroke-linecap: round;
