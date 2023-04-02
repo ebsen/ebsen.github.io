@@ -9,13 +9,26 @@
       :root {
         --near-black: #111111;
         --near-white: #f4f4f4;
+        --light-grey: #eeeeee;
+        --navy: #001b44;
         --dark-blue: #00449e;
+        --blue: #357edd;
+        --light-blue: #96ccff;
         --spacing-extra-small: 0.25rem;
-        background: var(--near-white);
+        background: var(--light-grey);
         color: var(--near-black);
         font-family: ui-monospace, monospace;
         font-size: 0.875rem;
         line-height: 1.2em;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          background: var(--navy);
+          color: var(--light-grey);
+        }
+        a {
+          color: var(--light-blue);
+        }
       }
       @media screen and (min-width: 20rem) {
         :root {
