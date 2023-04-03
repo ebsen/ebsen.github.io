@@ -21,15 +21,6 @@
         font-size: 0.875rem;
         line-height: 1.2em;
       }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          background: var(--navy);
-          color: var(--light-grey);
-        }
-        a {
-          color: var(--light-blue);
-        }
-      }
       @media screen and (min-width: 20rem) {
         :root {
           font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
@@ -74,6 +65,15 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          background: var(--navy);
+          color: var(--light-grey);
+        }
+        a {
+          color: var(--light-blue);
+        }
       }
     </style>
   </head>
